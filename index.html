@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="tittle-generator">GENERADOR DE MEMES</h1>
+            <div class="panel-botones">
+                <button class="boton boton-imagen">
+                     <i class="" aria-hidden="true"></i>imagen
+                </button>
+                <button class="boton boton-texto">
+                    <i class="" aria-hidden="true"></i>Texto
+               </button>
+               <button class="boton boton-modooscuro">
+                <i class="" aria-label="cambiar modo oscuro"></i>Modo oscuro
+                </button>
+                <button class="boton boton-modooscuro">
+                    <i class="" aria-label="cambiar modo claro"></i>Modo oscuro
+                </button>
+            </div>
+        </header>
+
+        <div class="editor container">
+            <main class="meme-container">
+              <div>
+                <p>Top text</p>
+                <div> </div>
+                  <p>
+                    Botton text
+                  </p>
+              </div>
+              <button>
+                <i class="" aria hidden="true"></i> Descargar meme
+              </button>
+            </main>
+
+            <aside class="panel-oculto" id="">
+              <button>
+                <i class="" aria-hidden="true"></i> 
+              </button>
+              <section class="" id="">
+                <h2>Imagen</h2>
+                <div>
+                  <h3>Url</h3>
+                  <input>
+                </div>
+                <div>
+                  <h3>Fondo</h3>
+                  <div class="">
+                    <div class="">
+                      <input> 
+                      <span> 
+
+                      </span>
+                    </div>
+                    <div class="">
+                      <select>
+                        <option value="">Ninguno</option>
+                        <option value="">Aclarar</option>
+                        <option value="">Oscurecer</option>
+                        <option value="">Diferencia</option>
+                        <option value="">Luminosidad</option>
+                        <option value="">Multiplicar</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <h3>Filtros</h3>
+                  <div>
+                    <label>Brillo</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Opacidad</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Contraste</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Desenfoque</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Escala de grises</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Sepia</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>hue</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Saturado</label>
+                    <input>
+                  </div>
+                  <div>
+                    <label>Negativo</label>
+                    <input>
+                  </div>
+                </div>
+                <button>Reestablecer filtros</button>
+              </section>
+
+              <!--TEXT PANEL-->
+              <section class="">
+                <h2>Texto</h2>
+                <div>
+                  <h3>Superior</h3>
+                  <textarea>Top text</textarea>
+                  <div>
+                    <input>
+                    <label>Sin texto superior</label>
+                  </div>
+                </div>
+
+                <div>
+                  <h3>Inferior</h3>
+                  <textarea>Botton text</textarea>
+                  <div>
+                    <input>
+                    <label>Sin texto inferior</label>
+                  </div>
+                </div>
+
+                <!--FUENTE-->
+                <div>
+                  <h3>Fuente</h3>
+                  <!--FAMILIA DE FUENTES-->
+                  <select>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div>
+                    <!--TAMAÑO-->
+                    <input>
+                    <!--ALINEACIÓN-->
+                    <div>
+                      <button>
+                        <i></i>
+                      </button>
+                      <button>
+                        <i></i>
+                      </button>
+                      <button>
+                        <i></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--COLOR-->
+                <div>
+                  <div>
+                    <!--COLOR DE TEXTO-->
+                    <div>
+                      <h3>Color</h3>
+                      <div>
+                        <input>
+                        <span>#000000</span>
+                      </div>
+                    </div>
+                  <!--COLOR DE FONDO-->  
+                    <div>
+                      <h3>Fondo</h3>
+                      <div>
+                        <input>
+                        <span>#ffffff</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <input>
+                    <label>Fondo transparente</label>
+                  </div>
+                </div>
+
+                <!--CONTORNO-->
+                <div>
+                  <h3>Contorno</h3>
+                  <div>
+                    <button>Ninguno</button>
+                    <button>Claro</button>
+                    <button>Oscuro</button>
+                  </div>
+                </div>
+
+                <!--PADDING-->
+                <div>
+                  <h3>Espaciado</h3>
+                  <input>
+                </div>
+
+                <!--ALTO DE LINEA-->
+                <div>
+                  <h3>Interlineado</h3>
+                  <select>
+                    <option value="">0.8</option>
+                    <option value="">1</option>
+                    <option value="">1.2</option>
+                    <option value="">1.5</option>
+                    <option value="">2</option>
+                    <option value="">2.5</option>
+                  </select>
+                </div>
+              </section>
+            </aside>
+        </div>
+
+
+
+        
+    </div>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
