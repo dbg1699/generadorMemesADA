@@ -4,228 +4,361 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dac9c574a1.js" crossorigin="anonymous"></script>
+
+
 </head>
-<body class="tema">
-  <div class="editor-container">
-        <header>
-            <h1 class="tittle-generator">GENERADOR DE MEMES</h1>
-            <div class="panel-botones">
-                <button class="boton boton-imagen">
-                     <i class="" aria-hidden="true"></i>imagen
-                </button>
-                <button class="boton boton-texto">
-                    <i class="" aria-hidden="true"></i>Texto
-               </button>
-               <button class="boton boton-modooscuro">
-                <i class="" aria-label="cambiar modo oscuro"></i>Modo oscuro
-                </button>
-                <button class="boton boton-modooscuro">
-                    <i class="" aria-label="cambiar modo claro"></i>Modo oscuro
-                </button>
-            </div>
-        </header>
-
-        <div class="editor container">
-            <main class="meme-container">
-              <div>
-                <p>Top text</p>
-                <div> </div>
-                  <p>
-                    Botton text
-                  </p>
-              </div>
-              <button>
-                <i class="" aria hidden="true"></i> Descargar meme
-              </button>
-            </main>
-
-            <aside class="panel-oculto" id="panel">
-              <button>
-                <i class="" aria-hidden="true"></i> 
-              </button>
-              <section class="" id="">
-                <h2>Imagen</h2>
-                <div>
-                  <h3>Url</h3>
-                  <input>
-                </div>
-                <div>
-                  <h3>Fondo</h3>
-                  <div class="">
-                    <div class="">
-                      <input> 
-                      <span> 
-
-                      </span>
-                    </div>
-                    <div class="">
-                      <select>
-                        <option value="">Ninguno</option>
-                        <option value="">Aclarar</option>
-                        <option value="">Oscurecer</option>
-                        <option value="">Diferencia</option>
-                        <option value="">Luminosidad</option>
-                        <option value="">Multiplicar</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="">
-                  <h3>Filtros</h3>
-                  <div>
-                    <label>Brillo</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Opacidad</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Contraste</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Desenfoque</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Escala de grises</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Sepia</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>hue</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Saturado</label>
-                    <input>
-                  </div>
-                  <div>
-                    <label>Negativo</label>
-                    <input>
-                  </div>
-                </div>
-                <button>Reestablecer filtros</button>
-              </section>
-
-              <!--TEXT PANEL-->
-              <section class="">
-                <h2>Texto</h2>
-                <div>
-                  <h3>Superior</h3>
-                  <textarea>Top text</textarea>
-                  <div>
-                    <input>
-                    <label>Sin texto superior</label>
-                  </div>
-                </div>
-
-                <div>
-                  <h3>Inferior</h3>
-                  <textarea>Botton text</textarea>
-                  <div>
-                    <input>
-                    <label>Sin texto inferior</label>
-                  </div>
-                </div>
-
-                <!--FUENTE-->
-                <div>
-                  <h3>Fuente</h3>
-                  <!--FAMILIA DE FUENTES-->
-                  <select>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div>
-                    <!--TAMAÑO-->
-                    <input>
-                    <!--ALINEACIÓN-->
-                    <div>
-                      <button>
-                        <i></i>
-                      </button>
-                      <button>
-                        <i></i>
-                      </button>
-                      <button>
-                        <i></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!--COLOR-->
-                <div>
-                  <div>
-                    <!--COLOR DE TEXTO-->
-                    <div>
-                      <h3>Color</h3>
-                      <div>
-                        <input>
-                        <span>#000000</span>
-                      </div>
-                    </div>
-                  <!--COLOR DE FONDO-->  
-                    <div>
-                      <h3>Fondo</h3>
-                      <div>
-                        <input>
-                        <span>#ffffff</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <input>
-                    <label>Fondo transparente</label>
-                  </div>
-                </div>
-
-                <!--CONTORNO-->
-                <div>
-                  <h3>Contorno</h3>
-                  <div>
-                    <button>Ninguno</button>
-                    <button>Claro</button>
-                    <button>Oscuro</button>
-                  </div>
-                </div>
-
-                <!--PADDING-->
-                <div>
-                  <h3>Espaciado</h3>
-                  <input>
-                </div>
-
-                <!--ALTO DE LINEA-->
-                <div>
-                  <h3>Interlineado</h3>
-                  <select>
-                    <option value="">0.8</option>
-                    <option value="">1</option>
-                    <option value="">1.2</option>
-                    <option value="">1.5</option>
-                    <option value="">2</option>
-                    <option value="">2.5</option>
-                  </select>
-                </div>
-              </section>
-            </aside>
+<body class="tema-oscuro">
+  <!--FALTAN PONER ID-->
+    <header>
+        <h1 class="titulo-principal">
+          Generador De Memes
+        </h1>
+        <div class="contenedor-boton panel-botones">
+            <button class="boton boton-texto" id="panel-img-boton">
+              <i class="far fa-file-image boton-icono" aria-hidden= "true" ></i>
+                Imagen
+            </button>
+            <button class="boton boton-texto" id="texto-panel-boton">
+                <i class="fas fa-font boton-icono" aria-hidden="true"></i>
+                Texto
+           </button>
+           <button class="boton boton-modo-oscuro tema-oscuro" id="boton-tema-oscuro"  aria-label="cambiar modo oscuro">
+                <i class="fas fa-lightbulb boton-icono" aria-hidden="true"></i>
+                Modo oscuro
+            </button>
+            <button class="boton boton-modo-claro  tema-claro" id="boton-tema-claro" aria-label="cambiar modo claro">
+                <i class="fas fa-lightbulb boton-icono" aria-hidden="true"></i>
+                Modo claro
+            </button>
         </div>
-      </div>
-    <script src="javascript/script.js"></script>
+    </header>  
+  <!-- CONTENEDOR PARA EDITAR EL MEME, MAIN
+  desde aca dani-->
+    <div class="editor-contenedor">
+        <main class="contenedor-meme">
+          <div class="canvas-meme" id="canvas-meme">
+            <p class="texto-meme" id="top-text">
+              TOP TEXT
+            </p>
+            <div class="imagen-meme" id="img-meme" aria-label="Imagen de meme" > </div> <!-- preguntar que hay que poner -->
+            <p class="texto-meme" id="bottom-text">
+              BOTTOM TEXT
+            </p>
+          </div>
+          <button type="button" class="boton boton-texto" id="descargar-meme">
+            <i class="fas fa-download" aria hidden="true"></i> 
+              Descargar meme
+          </button>
+        </main>
+<!--
+  hasta aca dani 
+
+  EMPEZAMOS ASIDE
+
+desde aca luciana-->
+        <aside class="panel oculto" id="panel">
+          <button class="panel-cerrar-boton" id="panel-cerrar-boton" aria-label="cerrar panel">
+            <i class="fas fa-times" aria-hidden="true"></i> 
+          </button>
+          <section class="panel-img" id="panel-img">
+            <h2 class="panel-titulo">
+              Imagen
+            </h2>
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Url
+              </h3>
+              <input type="text" class="control-panel-input" id="url-img-input" aria-label="Url de imagen">
+            </div>
+            <!-- FONDO -->
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Fondo
+              </h3>
+              <div class="control-panel-columnas">
+                <div class="control-panel-columna control-panel-color">
+                  <input aria-label="color de fondo de imagen" type="color" id="blend-mode-color-input" value="#ffffff"> 
+                  <span id="blend-mode-color" aria-hidden="true"> 
+                    #ffffff
+                  </span>
+                </div>
+                <div class="control-panel-columna">
+                  <select aria-label="Modo de mezcla de fondo de imagen" class="control-panel-input" id="blend-mode-select">
+                    <option value="unset">
+                      Ninguno
+                    </option>
+                    <option value="lighten">
+                      Aclarar
+                    </option>
+                    <option value="darken">
+                      Oscurecer
+                    </option>
+                    <option value="difference">
+                      Diferencia
+                    </option>
+                    <option value="luminosity">
+                      Luminosidad
+                    </option>
+                    <option value="multiply">
+                      Multiplicar
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+<!--hasta aca hace luciana-->
+<!--desde aca coni-->
+            <div class="control-panel">
+            <h3 class= "control-panel-titulo">
+              Filtros
+            </h3>
+            <div class="control-panel-slider">
+              <label for="brightness-slider">
+                Brillo
+              </label>
+              <input type="range" id="opacity-slider" min="0" max="1" value="1" step="0.1">
+            </div>
+            <div class="control-panel-slider">
+              <label for="opacity-slider">
+                Opacidad
+              </label>
+              <input type="range" id="opacity-slider" min="0" max="1" value="1" step="0.1">
+            </div>
+            <div class="control-panel-slider">
+              <label for="constrast-slider" >
+                Contraste
+              </label>
+              <input type="range" id="constrast-slider" min="100" max="1000" value="100">
+            </div>
+            <div class="control-panel-slider">
+              <label for="blur-slider">
+                Desenfoque
+              </label>
+              <input type="range" id="blur-slider" min="0" max="10" value="0" step="0.1">
+            </div>
+            <div class="control-panel-slider">
+              <label for="grayscale-slider">
+                Escala de grises
+              </label>
+              <input type="range" id="grayscale-slider" min="0" max="100" value="0">
+            </div>
+            <div class="control-panel-slider">
+              <label for="sepia-slider">
+                Sepia
+              </label>
+              <input type="range" id="sepia-slider" min="0" max="100" value="0">
+            </div>
+            <div class="control-panel-slider">
+              <label for="hue-slider">
+                Hue
+              </label>
+              <input type="range" id="hue-slider" min="0" max="360" value="0">
+            </div>
+            <div class="control-panel-slider">
+              <label for="saturate-slider">
+                Saturado
+              </label>
+              <input type="range" id="saturate-slider" min="100" max="1000" value="100" step="10">
+            </div>
+            <div class="control-panel-slider">
+              <label for="invert-slider">
+                Negativo
+              </label>
+              <input type="range" id="invert-slider" min="0" max="1" value="0" step="0.1">
+            </div>
+          </div>
+            <button class="boton boton-defecto" id="default-filters-button">
+              Reestablecer filtros
+            </button>
+            </section>
+
+<!--hasta aca coni-->
+          <!--TEXT PANEL
+          dani -->
+          <section class="panel-texto-oculto" id="panel-texto">
+            <h2 class="panel-titulo">
+              Texto
+            </h2>
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Superior
+              </h3>
+              <textarea aria-label="" class="control-panel-input" id="">
+                Top text
+              </textarea>
+              <div class="flex-contenedor control-panel-checkbox">
+                <input type="checkbox" id="">
+                <label for="">
+                  Sin texto superior
+                </label>
+              </div>
+            </div>
+
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Inferior
+              </h3>
+              <textarea aria-label="" class="control-panel-input" id="">
+                Botton text
+              </textarea>
+              <div class="flex-contenedor control-panel-checkbox">
+                <input type="checkbox" id="">
+                <label for="">
+                  Sin texto inferior
+                </label>
+              </div>
+            </div>
+<!-- hasta aca dani-->
+            <!--FUENTE-->
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Fuente
+              </h3>
+              <!--FAMILIA DE FUENTES-->
+              <select name="familia de fuente" id="" class="control-panel-input" aria-label="">
+                <option value="Arial">
+                  Arial
+                </option>
+                <option value="Arial black">
+                  Arial black
+                </option>
+                <option value="American Typewriter">
+                  American Typewriter
+                </option>
+                <option value="Andale Mono">
+                  Andale Mono
+                </option>
+                <option value="Comic Sans MS">
+                  Comic Sans MS
+                </option>
+                <option value="Helvetica">
+                  Helvetica
+                </option>
+                <option value="Impact">
+                  Impact
+                </option>
+                <option value="Verdana">
+                  Verdana
+                </option>
+                <option value="Times New Roman">
+                  Times New Roman
+                </option>
+              </select>
+              <div class="flex-contenedor">
+                <!--TAMAÑO-->
+                <input type="number" name="tamaño de fuente" aria-label="" class="control-panel-input" id="" min="12" value="40">
+                <!--ALINEACIÓN-->
+                <div class="contenedor-boton boton-alineacion">
+                  <button class="boton boton-defecto" id="" aria-label="">
+                    <i class="fas fa-align-left"></i>
+                  </button>
+                  <button class="boton boton-defecto" id="" aria-label="">
+                    <i class="fas fa-align-center"></i>
+                  </button>
+                  <button class="boton boton-defecto" id="" aria-label="">
+                    <i class="fas fa-align-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--COLOR-->
+            <div class="control-panel">
+              <div class="control-panel-columnas">
+             <!--COLOR DE TEXTO-->
+                <div class="control-panel control-panel-columna">
+                  <h3 class="control-panel-titulo">
+                    Color
+                  </h3>
+                  <div class="control-panel-color">
+                    <input name="color de texto" type="color" id="" value="#000000" aria-label="color de texto">
+                    <span id="" aria-hidden="true">
+                      #000000
+                    </span>
+                  </div>
+                </div>
+              <!--COLOR DE FONDO-->  
+                <div class="control-panel control-panel-columna">
+                  <h3 class="control-panel-titulo">
+                    Fondo
+                  </h3>
+                  <div class="control-panel-color">
+                    <input name="color de fondo de texto" type="color" id="" value="#ffffff" aria-label="">
+                    <span id="" aria-hidden="true">
+                      #ffffff
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-contenedor control-panel-checkbox">
+                <input type="checkbox" id="">
+                <label for="">
+                  Fondo transparente
+                </label>
+              </div>
+            </div>
+
+            <!--CONTORNO-->
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Contorno
+              </h3>
+              <div class="boton-contenedor">
+                <button class="boton boton-defecto" id="">
+                  Ninguno
+                </button>
+                <button class="boton boton-defecto" id="">
+                  Claro
+                </button>
+                <button class="boton boton-defecto" id="">
+                  Oscuro
+                </button>
+              </div>
+            </div>
+
+            <!--PADDING-->
+            <div class="control-panel" >
+              <h3 class="control-panel-titulo">
+                Espaciado
+              </h3>
+              <input type="number" id="" class="control-panel-input" aria-label="" min="10" max="50" value="35">
+            </div>
+
+            <!--ALTO DE LINEA-->
+            <div class="control-panel">
+              <h3 class="control-panel-titulo">
+                Interlineado
+              </h3>
+              <select id="" class="control-panel-input" aria-label="">
+                <option value="0.8">
+                  0.8
+                </option>
+                <option value="1">
+                  1
+                </option>
+                <option value="1.2">
+                  1.2
+                </option>
+                <option value="1.5">
+                  1.5
+                </option>
+                <option value="2">
+                  2
+                </option>
+                <option value="2.5">
+                  2.5
+                </option>
+              </select>
+            </div>
+          </section>
+        </aside>
+    </div>
+
+    <script src="./script.js"></script>
+    <script></script>
 </body>
 </html>
