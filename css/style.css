@@ -11,46 +11,280 @@ body{
     overflow:hidden;
     height: 100vh;
     margin:0;
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
-.editor-container{
-    --color-header: #191e2b;
-    --color-background: #30343f;
-    --color-panel: #252935;
-    --color-boton-default: #393e49;
-    --color-boton-default-hover: #4e5565;
-    --color-text: #ffffff;
-    --font-primary: 'Open Sans', sans-serif;
-    --border-radius: 3px;
-}
-
-.tema{
+.tema-oscuro{
     background: #000;
 }
-
+/* comenzamos con el header*/
 header{
     background: #191E2B;
     display:block;
 }
-
-.tittle-generator {
+input, button, select, textarea{
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    display: block;
+    outline: 0;
+    color: white;
+}
+.button:first-child{
+    margin-left: 0;
+}
+.titulo-principal{
     text-align:center;
     margin: 10px;
     font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+/*BOTONES*/
+
+.panel-botones{
+    justify-content: center;
 }
 
+.contenedor-boton {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.contenedor-boton .boton {
+    margin: 2.5px;
+}
+
+.boton{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+}
+
+.boton-icono{
+    margin-right: 5px;
+    display: block;
+}
+
+.boton-texto:hover
+.boton-texto:focus
+.boton-defecto:hover
+.boton-defecto:focus{
+    background-color:#393e49 ;
+}
+.modo-claro .boton-modo-claro, .modo-oscuro .boton-modo-oscuro {
+    display: flex;
+}
+.modo-oscuro .boton-modo-claro, .modo-claro .boton-modo-oscuro{
+    display: none;
+}
+
+/* comenzamos el editor de meme */
+.editor-contenedor{
+    display: flex;
+    flex-grow: 1;
+}
+
+.contenedor-meme{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #30343f;
+    padding: 0 20px 0 20px;
+}
+
+.canvas-meme{
+    width: 100%;
+    max-width: 610px;
+    height: 610px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-meme{
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 35px 50px 35px 50px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Impact;
+    position: static;
+}
+
+.imagen-meme{
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+}
+/* COMENZAMOS EL ASIDE*/
 .panel{
-    width:260px;
-    height:100%;
+    width: 260px;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #333;
+    background-color: #252935;
     padding: 30px 15px;
     overflow: auto;
     position: fixed;
-    top:0;
-    right:0;
+    margin: 0;
+    box-shadow: -10px 10px 100px 5px rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
+/* 
+.oculto{
+    display: none;
+}
+*/
 
+.panel-cerrar-boton{
+    position: fixed;
+    margin: 15px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.panel-cerrar-boton:focus
+.panel-cerrar-boton:hover{
+    background-color:  #393e49;
+}
+.panel-titulo{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+.panel-control{
+    margin-bottom: 20px;
+}
+.panel-control-titulo{
+    color: white;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 0;
+}
+.control-panel-input{
+    width: 100%;
+    height: 36px;
+    background-color: #393e49;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 5px;
+}
+.control-panel-input:hover,
+.control-panel-input:focus {
+  background-color: #393e49;;
+}
+
+.control-panel-columnas{
+    display: flex;
+    justify-content: space-between;
+}
+.control-panel-columnas .control-panel-columna{
+    width: calc(50%-5px);
+    margin-bottom: 0;
+}
+.control-panel.color{
+    position: relative;
+    height: 36px;
+    display: flex;
+}
+.control-panel-color > span {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+.control-panel-color > input[type='color']::-webkit-color-swatch {
+    width: 18px;
+    max-width: 18px;
+    margin: 0;
+  }
+.control-panel-color > input[type='color']::-webkit-color-swatch-wrapper {
+    display: flex;
+    height: 36px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: #393e49;
+    display: flex;
+    box-sizing: border-box;
+  }
+.control-panel-color > input[type='color']:focus::-webkit-color-swatch-wrapper {
+    background-color:#393e49;
+  }
+
+
+option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px 2px;
+}
+.control-panel-slider{
+    margin-top: 15px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    color: white;
+}
+.boton-defecto{
+    background-color: #393e49;
+}
+.control-panel-titulo{
+    color: white;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 0;
+}
+.flex-contenedor{
+    display: flex;
+    align-items: center;
+}
+.control-panel-checkbox{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.boton-alineacion{
+    width: calc(50%-2.5px);
+    justify-content: space-between;
+    margin-left: 2.5px;
+}
+
+/*#ID*/
+/* boton de descarga meme*/
+#descargar-meme{
+    margin-top: 30px;
+    padding: 15px 15px;
+    height: auto;
+    background-color: #2e7d32;
+    color: white;
+}
+#descargar-meme:hover
+#descargar-meme:focus{
+    background-color:#1b5e20;
+}
+
+#img-meme{
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+}
